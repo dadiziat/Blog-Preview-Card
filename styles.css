@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --border-radius: 20px;
+  --main-background: hsl(47, 88%, 63%);
+}
+
+body {
+  background: var(--main-background);
+  font-family: 'Figtree', sans-serif;
+}
+
+.container {
+  background: white;
+  width: 500px;
+  max-width: 650px;
+  margin: 40px auto;
+}
+
+.card {
+  border: 2px black solid;
+  border-radius: var(--border-radius);
+  box-shadow: 8px 10px 6px rgba(0, 0, 0, 0.9);
+  padding: 15px;
+}
+
+svg {
+  display: block;
+  margin: 10px auto; 
+  width: 90%;
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+
+}
+
+button {
+  font-size: 1.2rem;
+  font-weight: 800;
+  background-color: var(--main-background);
+  padding: 5px 10px;
+  border-radius: calc(var(--border-radius) / 3);
+  border: none;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+ p {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 2rem;
+  transition: all 900ms ease;
+}
+
+h1:hover {
+  color: var(--main-background);
+  cursor: pointer;
+}
+
+h1 + p {
+  color: hsl(0, 0%, 42%);
+}
+
+.author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.author img {
+  width: 50px;
+}
+
+.author h2 {
+  font-size: 1.2rem;
+  
+}
+  
